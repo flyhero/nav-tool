@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>程序员导航</title>
+  <link rel="icon" type="image/png" href="">
+  
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <meta name="description" content="常用社区，博客，工具网站的集合">
+  <link rel="stylesheet" href="./css/style.css">
+<body youdao="bind">
+  <header id="header">
+    <div class="container">
+      <h2 class="logo">
+        <a target="_blank" href="#" alt="">nav-tool</a>
+      </h2>
+      <nav id="nav" class="nav">
+        <ul>
+          <li>
+            <a target="_blank" href="javascript:void(0);" data-for="community">社区</a>
+          </li>
+          <li>
+            <a target="_blank" href="javascript:void(0);" data-for="tool">工具</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="page-main">
+    <div class="container">
+      <div id="main-content" class="main-content">
+        <div class="main-item" data-id="community">
+          <div class="caption">
+            技术社区
+          </div>
+          <div class="content">
+            <ul class="list clearfix">
+              <li>
+                <a target="_blank" href="https://juejin.im/">
+                  <div class="title">
+                    <img src="https://b-gold-cdn.xitu.io/favicons/v2/favicon.ico" alt="">掘金</div>
+                  <div class="desc">一个帮助开发者成长的社区</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/">
+                  <div class="title">
+                    <img src="https://github.com/fluidicon.png" alt="">GitHub</div>
+                  <div class="desc">全球最大开源网站</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://gitee.com/">
+                  <div class="title">
+                    <img src="https://gitee.com/assets/favicon-e87ded4710611ed62adc859698277663.ico" alt="">GitHub</div>
+                  <div class="desc">开源中国 Git 代码托管平台</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.v2ex.com/">
+                  <div class="title">
+                    <img src="https://www.v2ex.com/static/img/v2ex_192.png" alt="">V2EX</div>
+                  <div class="desc">一个关于分享和探索的地方</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://www.oschina.net/">
+                  <div class="title">
+                    <img src="https://www.oschina.net/img/ie/logo_osc.png" alt="">开源中国</div>
+                  <div class="desc">中国最大的开源技术社区</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://segmentfault.com/">
+                  <div class="title">
+                    <img src="https://static.segmentfault.com/v-5bbf1b3b/global/img/touch-icon.png" alt="">segmentfault</div>
+                  <div class="desc">中国领先的开发者技术社区</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://www.importnew.com/">
+                  <div class="title">
+                    <img src="http://www.importnew.com/wp-content/uploads/2014/12/d02a42d9cb3dec9320e5f550278911c7.ico" alt="">importnew</div>
+                  <div class="desc">专注Java &amp; Android 技术分享</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.quora.com">
+                  <div class="title">
+                    <img src="https://qsf.fs.quoracdn.net/-3-images.favicon.ico-26-ae77b637b1e7ed2c.ico" alt="">Quora</div>
+                  <div class="desc">国外一个在线知识市场</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="main-item" data-id="tool">
+          <div class="caption">
+            工具
+          </div>
+          <div class="content">
+            <ul class="list clearfix">
+
+              <li>
+                <a target="_blank" href="https://tool.lu/">
+                  <div class="title">
+                    <img src="https://qn11.tool.lu/201711/08/002819v0Gaydtvy2P4y03G_144x144.png" alt="">在线工具</div>
+                  <div class="desc"> 程序员的工具箱</div>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://json.awesomes.cn/">
+                  <div class="title">
+                    <img src="./images/jsonon.png" alt="">JSON ON</div>
+                  <div class="desc">一个简洁的在线 JSON 查看器</div>
+                </a>
+              </li>
+             <li>
+                <a target="_blank" href="http://code2img.75team.com/">
+                  <div class="title">
+                    <img src="http://tooool.org/" alt="">code2img</div>
+                  <div class="desc">代码片段转化成图片</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#nav ul li a').on('click', function(){
+        $(this).parent('li').addClass('active').siblings('li').removeClass('active');
+        var navItemFor = $(this).attr('data-for');
+        var mainContent = $('#main-content');
+        var mainItem = mainContent.find('.main-item');
+        var mainItemTop = mainContent.find('[data-id=' + navItemFor + ']').offset().top - 92;
+        $('body, html').animate({scrollTop: mainItemTop});
+      });
+    });
+  </script>
+
+</html>
