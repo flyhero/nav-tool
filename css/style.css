@@ -133,3 +133,17 @@ body { background-color: #f3f6f8; }
 @media (min-width:1200px) {
   .main-item .list li { width: 18%; }
 }
+
+.search-input{
+  background: #00000000;
+    border: none;
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    margin: 0;
+    outline: none;
+    padding: 0 8px;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+}
