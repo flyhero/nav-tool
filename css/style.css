@@ -87,17 +87,17 @@ button, input, optgroup, select, textarea { font-family: inherit; -webkit-box-si
 .margin-bottom-25 { margin-bottom: 25px !important; }
 body { background-color: #f3f6f8; }
 .icon { line-height: 1; display: inline-block; vertical-align: middle; background-repeat: no-repeat; background-position: center; background-size: auto 100%; }
-#header { position: fixed; z-index: 1000; top: 0; right: 0; left: 0; height: 72px; border-bottom: 1px solid #e0e0e0; background: #fff; }
-#header .logo { font-size: 20px; font-weight: normal; line-height: 72px; float: left; margin: 0; vertical-align: middle; }
+#header { position: fixed; z-index: 1000; top: 0; right: 0; left: 0; height: 60px; border-bottom: 1px solid #e0e0e0; background: #fff; }
+#header .logo { font-size: 20px; font-weight: normal; line-height: 60px; float: left; margin: 0; vertical-align: middle; }
 #header .logo a { display: block; }
 #header .logo img { float: left; height: 40px; margin-top: 16px; margin-right: 8px; }
 #header .nav { float: right; }
-#header .nav li { font-size: 16px; line-height: 72px; float: left; }
+#header .nav li { font-size: 16px; line-height: 60px; float: left; }
 #header .nav li a { display: block; padding: 0 24px; -webkit-transition: all .2s; transition: all .2s; opacity: .8; border-bottom: 1px solid transparent; }
 #header .nav li.active a, #header .nav li a:hover { opacity: 1; color: #3273dc; border-bottom: 1px solid #3273dc; }
 #footer { border-top: 1px solid #e0e0e0; background: rgba(255, 255, 255, .8); }
 #footer .copyright { line-height: 24px; padding: 20px 0; text-align: center; }
-.page-main { margin-top: 72px; }
+.page-main { margin-top: 60px; }
 .main-item { margin: 20px 0; border-radius: 5px; background: #fff; }
 .main-item .caption { font-size: 16px; line-height: 24px; padding: 16px 20px 0; color: #565656; }
 .main-item .caption .icon { float: left; width: 24px; height: 24px; margin-right: 8px; }
